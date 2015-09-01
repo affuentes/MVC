@@ -1,0 +1,60 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.10
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost:3306
+-- Generation Time: Aug 06, 2015 at 05:28 PM
+-- Server version: 5.5.38
+-- PHP Version: 5.6.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `localizacion`
+--
+CREATE DATABASE IF NOT EXISTS `localizacion` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `localizacion`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pais`
+--
+
+DROP TABLE IF EXISTS `pais`;
+CREATE TABLE IF NOT EXISTS `pais` (
+`IdPais` int(11) NOT NULL,
+  `Nombre` varchar(50) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pais`
+--
+
+INSERT INTO `pais` (`IdPais`, `Nombre`) VALUES
+(1, 'Colombia'),
+(2, 'Mexico'),
+(3, 'Argentina'),
+(4, 'Panama'),
+(5, 'Brazil');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `pais`
+--
+ALTER TABLE `pais`
+ ADD PRIMARY KEY (`IdPais`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `pais`
+--
+ALTER TABLE `pais`
+MODIFY `IdPais` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
