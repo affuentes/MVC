@@ -10,7 +10,7 @@
 <!---------------------------------------------------------------------------------------->
 
 <div class="main">
-    <label for="pais">Pais*</label>
+    <label for="pais">Pais*x</label>
     <select name = "pais" id="select_pais">
         <option>[Pais]</option>
     </select>    
